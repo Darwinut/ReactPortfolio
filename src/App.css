@@ -40,3 +40,10 @@
   font-size: 20px;
   padding: 1em;
 }
+
+.social-links {
+  display: flex;
+  justify-content: space-between;
+  width: 50%;
+  color: white;
+}
