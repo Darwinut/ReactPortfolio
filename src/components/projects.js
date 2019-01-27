@@ -7,19 +7,29 @@ class Projects extends Component {
 		this.state = { activeTab: 0};
 	}
    
-   	/*
-	toggleCategories () {
+   	
+	toggleCategories() {
 		
-	  if(this.state.activeTab === 0) {
+	  if(this.state.activeTab === 0){
 		return(
-			<div><h1> This is React</h1></div>
-			
-			TODO
-	  )
+			<div><h1> This is Selenium</h1></div>
+		)
+	  } else if(this.state.activeTab === 1) {
+	  	return (
+	  		<div><h1> This is TestNG</h1></div>
+	  	)
+	  } else if(this.state.activeTab === 2) {
+	  	return (
+	  		<div><h1> This is Cucumber</h1></div>
+	  	)
+	  } else if(this.state.activeTab === 3) {
+	  	return (
+	  		<div><h1> This is React</h1></div>
+	  	)
 	  }
 
 	}
-	*/
+	
 	
 	render () {
 		return (
@@ -30,6 +40,10 @@ class Projects extends Component {
           <Tab>Cucumber</Tab>
           <Tab>React</Tab>
         </Tabs>
+
+        <section className="Projects-grid">
+       	  {this.toggleCategories()}
+       	</section>
         </div>
 		)
 	}
